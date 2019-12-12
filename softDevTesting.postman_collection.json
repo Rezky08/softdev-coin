@@ -1,0 +1,3849 @@
+{
+	"info": {
+		"_postman_id": "0edb509a-1d64-49c3-b8f1-f424bdc563ff",
+		"name": "softDevTesting",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer Register",
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": [
+						{
+							"key": "addParamsToHeader",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "addEmptyParamsToSign",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenSecret",
+							"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo",
+							"type": "string"
+						},
+						{
+							"key": "token",
+							"value": "834235722-9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep",
+							"type": "string"
+						},
+						{
+							"key": "consumerSecret",
+							"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD",
+							"type": "string"
+						},
+						{
+							"key": "consumerKey",
+							"value": "5C1Zpu5VuwKknBJAJhxTI5kFj",
+							"type": "string"
+						},
+						{
+							"key": "signatureMethod",
+							"value": "HMAC-SHA1",
+							"type": "string"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj",
+						"type": "text"
+					},
+					{
+						"key": "ConsumerSecret",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD",
+						"type": "text"
+					},
+					{
+						"key": "AccessToken",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep",
+						"type": "text"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fullname",
+							"value": "rezkysetiawan",
+							"type": "text"
+						},
+						{
+							"key": "DOB",
+							"value": "1999-01-01",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "rezky221196",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test123#",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rezky.setiawan80@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "089629238997",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "jakarta",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/customer/register?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"register"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "User register"
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Register Not Complete",
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": [
+						{
+							"key": "addParamsToHeader",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "addEmptyParamsToSign",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenSecret",
+							"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo",
+							"type": "string"
+						},
+						{
+							"key": "token",
+							"value": "834235722-9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep",
+							"type": "string"
+						},
+						{
+							"key": "consumerSecret",
+							"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD",
+							"type": "string"
+						},
+						{
+							"key": "consumerKey",
+							"value": "5C1Zpu5VuwKknBJAJhxTI5kFj",
+							"type": "string"
+						},
+						{
+							"key": "signatureMethod",
+							"value": "HMAC-SHA1",
+							"type": "string"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"type": "text",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj"
+					},
+					{
+						"key": "ConsumerSecret",
+						"type": "text",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD"
+					},
+					{
+						"key": "AccessToken",
+						"type": "text",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"type": "text",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fullname",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "DOB",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "rezky221197",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test123#",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rezky.setiawan85@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/customer/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"register"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "User register"
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjE4MjE0YmJjZTBiZmVkYmYzYmZhYWZjZGU3OTRjYjMwMDUzZjZiNDQ4Njc5NjJkZmI5OTcxYjE3YzA1NTBlZDYyMzYyODE0ZGZhZmUxMzQyIn0.eyJhdWQiOiIzIiwianRpIjoiMTgyMTRiYmNlMGJmZWRiZjNiZmFhZmNkZTc5NGNiMzAwNTNmNmI0NDg2Nzk2MmRmYjk5NzFiMTdjMDU1MGVkNjIzNjI4MTRkZmFmZTEzNDIiLCJpYXQiOjE1NzIxNDM0NjMsIm5iZiI6MTU3MjE0MzQ2MywiZXhwIjoxNjAzNzY1ODYzLCJzdWIiOiIzIiwic2NvcGVzIjpbImN1c3RvbWVyIl19.Q75l6QfS6HNXYMA7LfHdCKPyYCOAyrPuledySOqA-jYZqa6MwqY2g2yL67xXxON3-X5meJqXOFz0QjXo2s8ecjTcj9PjiPvpAURTgJXNCwzEcLrHxW8JXS4yAyJ3gup9uy-DoufmKIvXncjqWHWz2tyjIVN-IdeiYsXk70gkrvSAd_gZHjl105ibeu7Ux0ZJEnMBK8JfOnqnaQQCJjXUu1SPVnyJjQBHLoodmXvEtCU2yUr8_K71OLvWMfM0esr5Q0GH9W5X4xH5p4v1gJuyid5Lzg7xxva5MTQr2P3OKpLdFsRb6qnWGLZwJVXW4k49W_4X1HQ3-DpP7wAANNHh3yfg_AlNW2phe8y30SyNtdfS2gOgdJL7Xn1uMtR-dTesj0Vp33XKjH23R3xoDyggJmdr6J6yN1hxsrb0YqRxC5rmFyhvoL6EDPSAfiOliyPhFV77WUftmn8oofc4_oMBXVAGHTROxf6IZC_S6PzffSrBpazpjm9cpwbciC525gwFq_znebOeFjOwQstjHmWFr39EdXyMXGVJ-eZvYAhuPGI9EvslzrW98NGIO77IXSzis8YhdMDrjXgIv0-crvHaUHOrdNXNWSF5NSyobemEAgqsrNFSyit4Ha3rZH25hR4jfvA_8oqEoOlgQtS3Sr8e56byvUEJDdVwEVbM8ieUplQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj",
+						"type": "text"
+					},
+					{
+						"key": "ConsumerSecret",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD",
+						"type": "text"
+					},
+					{
+						"key": "AccessToken",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep",
+						"type": "text"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fullname",
+							"value": "rezkysetiawan",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "DOB",
+							"value": "1999-01-01",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "rezky221196",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test123#",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "rezky.setiawan85@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "089629238997",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "jakarta",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/customer/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"login"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjA2ZDU1YTI5OGQwMjhiMWMwOTQ3MjZmNWViZTJlOGEyNWM0OThiYjNkMDY5NTI1NjhjMDFlN2ZiZGI0OTg4M2M0MTQ2NjkzZDU0NTFmZmVlIn0.eyJhdWQiOiIxIiwianRpIjoiMDZkNTVhMjk4ZDAyOGIxYzA5NDcyNmY1ZWJlMmU4YTI1YzQ5OGJiM2QwNjk1MjU2OGMwMWU3ZmJkYjQ5ODgzYzQxNDY2OTNkNTQ1MWZmZWUiLCJpYXQiOjE1NzQ1ODY5MTgsIm5iZiI6MTU3NDU4NjkxOCwiZXhwIjoxNTc0NjczMzE4LCJzdWIiOiIyIiwic2NvcGVzIjpbImN1c3RvbWVyIl19.dbw05CvNibJEx0tpXI1cCf9KNCzSBF9gvF2xE3RzK_ZlcI7963MH-75eiMOrLPxWxvk38tQiuClIff08jPCgfEJy5qZYezuAhBQ_TJN6jmewU5NWyeM4Lws1obZOHevt0KZTIQEsts9jP-OMmIXhyUd5oLustsqeXhXum13ySQutrRUHxnoe8qJlXQQAzxlyt3hLGDvISLgg_c-orIlmZ5eyob14CQe5-rL1mTVzL5xVnZduxJr1gaJDWxwOXZcGrqv0X6yOk-sgg40UKpChWLnBLSAZJMT9oDxVU4eKsz2yo24L6KmRgwm8Ot44K5gUeyY2LqCC0ufIGJME49AflnJQjTVccaMlVm3SX-8Dy74vk29EHErP9Nwu0Oy83Yhrdj4swdkNcsdDcyrWMQJW2HALy_lbpuqPU3upetk_IC_T0XXLIcBLCoJInf49M2KGaxqmkwcR7EFcWKCeuIFuxKBWSu5Z1FfHmx6o4RPJyj6c-5Caci8gR4Zbw0P997oZFjT-i1JIjX4fAsRa4qVzG-HDLxMVR-94hU0NoWYA5HElO0k1u1Sn6s4NCKwHBdNRf6x8Gtovy6_cNWbkyUJNE4PRxhHZHXklBKGeCuvNT_rSP7XCPqzxLbWsJyRsfxu9jc4xjJ7IFWEU49OKBhIOc3aCboHYzQefvRf3i3yOEyQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"type": "text",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj"
+					},
+					{
+						"key": "ConsumerSecret",
+						"type": "text",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD"
+					},
+					{
+						"key": "AccessToken",
+						"type": "text",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"type": "text",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fullname",
+							"value": "rezkysetiawan",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "DOB",
+							"value": "1999-01-01",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "rezky221197",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "Test123#",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sex",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "rezky.setiawan85@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "089629238997",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "jakarta",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/customer/logout?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"logout"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdmMjMyNTNkNGFjNTg0NjViZGQyYTE5ZjI4MzE3ZWY0ZjY4MDU2Nzg0MzExYmE1ZmZjYTIwNjk4MDk5NWMwYTQzMmJiNTk1NzU5YTdhNzRlIn0.eyJhdWQiOiIxIiwianRpIjoiN2YyMzI1M2Q0YWM1ODQ2NWJkZDJhMTlmMjgzMTdlZjRmNjgwNTY3ODQzMTFiYTVmZmNhMjA2OTgwOTk1YzBhNDMyYmI1OTU3NTlhN2E3NGUiLCJpYXQiOjE1NzQ3MDI2ODAsIm5iZiI6MTU3NDcwMjY4MCwiZXhwIjoxNTc0Nzg5MDgwLCJzdWIiOiIxIiwic2NvcGVzIjpbImN1c3RvbWVyIl19.v4mHbr8BHoTzGzrlGZHHm9vMqAe7MXJWQpHs4bHIlH6bFmA2mpjJsNPZW7n4taz2Auoyf5KCem6ZQVeM2rA6eoO_fD7aYPzJAkyHsxhpV69wjHhDgzKfYC3UlXiGAq8pRW9ql4hm0CO9q0rJ9yYDCiFYkZ6O7pX-g2lc9NXDJqmazoo8BDqVQZgOUC9oCPtKB4MSYncpDyIKvXN_bgIhv2uKLBoWrzuJRnqf5WxV1sUSTAAYQvEnU3WjiY0Du_1Z1QWF6iJ9K_s4UpGCQ9DiTcSTqULpFSQ3_I3l1Vf8JgicTh4FNIk9zuxdcOkJZb3LZcbvdge9oRvoDqsl4yUYQsy9OBkIVrwMh5NKtzXi1KakGGU-Ie-f-Jsa6rOypAJi0-bzI-rw-GzVxLUqcnESh4qsNd2Fq_TIZYyagltHr_wfBXN2ygZ1GzCxmSyShUdMLfjb61m26CEuhkb9pA6zClnxgVA9_95foXB8RxxXuqZAzeq06HqWUNnBQpHbPyvEw5Zz7MntbsAe-eFHq7Oz2sbq17Ra8cE6WV143t47b4RNXKqH8MkyMBXi65g6uFg5WAodwHvZusht86QRR1m1Xv_b41Qe9bVEskmD-jV1HhoyGewyPqO0xhVkCHMClx8O1RontvxynvgU-X7UslUgWOAMIQosJ7-Mz0jzLeIhY1I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"type": "text",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj"
+					},
+					{
+						"key": "ConsumerSecret",
+						"type": "text",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD"
+					},
+					{
+						"key": "AccessToken",
+						"type": "text",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"type": "text",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fullname",
+							"value": "rezkysetiawan",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "DOB",
+							"value": "1999-01-01",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "rezky221197",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test123#",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "rezky.setiawan85@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "089629238997",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "jakarta",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/customer/1/profile",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"1",
+						"profile"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customer view cart",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjcxZTY4NTViOGU0NTc2NGYzZjNlZTU4YjU3OTMyODgzOWY4NThlOGZmNDE4MzQ0ODNjNWNlZTM2MDhkYTk4ZWFiYjczMmVhNjljNWVmNDBhIn0.eyJhdWQiOiIxIiwianRpIjoiNzFlNjg1NWI4ZTQ1NzY0ZjNmM2VlNThiNTc5MzI4ODM5Zjg1OGU4ZmY0MTgzNDQ4M2M1Y2VlMzYwOGRhOThlYWJiNzMyZWE2OWM1ZWY0MGEiLCJpYXQiOjE1NzQ3MDI1NTQsIm5iZiI6MTU3NDcwMjU1NCwiZXhwIjoxNTc0Nzg4OTU0LCJzdWIiOiIxIiwic2NvcGVzIjpbImN1c3RvbWVyIl19.qKcSYmw_wsNb1C9-A9zUhamIDOYrlNGDBgXtbjnTlN4j04kD4gwsEgA8Gi4rERq_ychVl67_3EZ-UDQ6b-zGoYW0w6YZ1ZWidsqRbQFk0tPg7inGZSGYd6ZTzDxCc-VyoDk5TIyOJZieQg0ZzP9jx_2Gu65dnVek2G5SEjXr73LDoUr3snsALZk2cmE3_-UzdvGPtI_ljcuKyawaCnfzhrWMLKWBrtFCKdvToEa7SEbKTnWP86ks39oDWHTpRILPLROe4Qy_ast4ptC8KeFvhQMCThLMb-9AK-DCCfoJrGgXIC89CS5eT0yM_x6xJ3Ja9wkhw9QEK39ROVunvZaQF1s5dH9aogrr7CpWUpX5VaKabXTjxrSffqH2Dqs_MRiggabkqWr2da2JU6ZvlgzftzhilpJ9W1F1eHr3E7knqwkeD2EQFEi8BvZks8N8UVBq6HSZGIotqVsbVkk0LkHQW-UpsVJZQYxH3Ami4Qhn4t2fvYT3SRZZTgoyZvJv88mHkQHhZek78dKaFevm7oxw3aNI4cK-ztncHNDhrRNZWvGnqD7ci94vgGjOdXSb40WtuFkfpK5RtCnRRRwweGgOfA3zFK7HZrv36o-eSCp_UjuxLSkXLOZvwF4iHWx7LTE8lsPSyCbouZbNU__1GQUKy4b0RtefyfDLEjfpsvCyHeg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "aHhy7AIAvzPBdQdpB0YbaRH6N9Zw0rbhWCjenCOLhMZKSjq9tvenCidF8Y05",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product_id",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "qty",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/customer/cart?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"cart"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "hlonDs2nLNjXoACagn2107GFXoytoXt3r463U6t4TEkhs9JGLwgCI50DdE9E",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customer add to cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjcxZTY4NTViOGU0NTc2NGYzZjNlZTU4YjU3OTMyODgzOWY4NThlOGZmNDE4MzQ0ODNjNWNlZTM2MDhkYTk4ZWFiYjczMmVhNjljNWVmNDBhIn0.eyJhdWQiOiIxIiwianRpIjoiNzFlNjg1NWI4ZTQ1NzY0ZjNmM2VlNThiNTc5MzI4ODM5Zjg1OGU4ZmY0MTgzNDQ4M2M1Y2VlMzYwOGRhOThlYWJiNzMyZWE2OWM1ZWY0MGEiLCJpYXQiOjE1NzQ3MDI1NTQsIm5iZiI6MTU3NDcwMjU1NCwiZXhwIjoxNTc0Nzg4OTU0LCJzdWIiOiIxIiwic2NvcGVzIjpbImN1c3RvbWVyIl19.qKcSYmw_wsNb1C9-A9zUhamIDOYrlNGDBgXtbjnTlN4j04kD4gwsEgA8Gi4rERq_ychVl67_3EZ-UDQ6b-zGoYW0w6YZ1ZWidsqRbQFk0tPg7inGZSGYd6ZTzDxCc-VyoDk5TIyOJZieQg0ZzP9jx_2Gu65dnVek2G5SEjXr73LDoUr3snsALZk2cmE3_-UzdvGPtI_ljcuKyawaCnfzhrWMLKWBrtFCKdvToEa7SEbKTnWP86ks39oDWHTpRILPLROe4Qy_ast4ptC8KeFvhQMCThLMb-9AK-DCCfoJrGgXIC89CS5eT0yM_x6xJ3Ja9wkhw9QEK39ROVunvZaQF1s5dH9aogrr7CpWUpX5VaKabXTjxrSffqH2Dqs_MRiggabkqWr2da2JU6ZvlgzftzhilpJ9W1F1eHr3E7knqwkeD2EQFEi8BvZks8N8UVBq6HSZGIotqVsbVkk0LkHQW-UpsVJZQYxH3Ami4Qhn4t2fvYT3SRZZTgoyZvJv88mHkQHhZek78dKaFevm7oxw3aNI4cK-ztncHNDhrRNZWvGnqD7ci94vgGjOdXSb40WtuFkfpK5RtCnRRRwweGgOfA3zFK7HZrv36o-eSCp_UjuxLSkXLOZvwF4iHWx7LTE8lsPSyCbouZbNU__1GQUKy4b0RtefyfDLEjfpsvCyHeg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "aHhy7AIAvzPBdQdpB0YbaRH6N9Zw0rbhWCjenCOLhMZKSjq9tvenCidF8Y05",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product_id",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "qty",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/customer/cart?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"cart"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "hlonDs2nLNjXoACagn2107GFXoytoXt3r463U6t4TEkhs9JGLwgCI50DdE9E",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customer update cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjRhMDZiMmEzMzliYTkyZTQyYzY3ZDE0NGEwMmYyM2RiNzM5ODk0Y2ZhZTUzNGVjMTk0MjlmNjJlY2Y0MTgwM2U3NzQ5OGUwMTQxMmFjYWU5In0.eyJhdWQiOiIxIiwianRpIjoiNGEwNmIyYTMzOWJhOTJlNDJjNjdkMTQ0YTAyZjIzZGI3Mzk4OTRjZmFlNTM0ZWMxOTQyOWY2MmVjZjQxODAzZTc3NDk4ZTAxNDEyYWNhZTkiLCJpYXQiOjE1NzI3MTMyMDcsIm5iZiI6MTU3MjcxMzIwNywiZXhwIjoxNTcyNzk5NjA3LCJzdWIiOiIxIiwic2NvcGVzIjpbImN1c3RvbWVyIl19.pZhvCs1IVw50gFsZyzCE9nhBXKZasLhSPfqSyiNKJsKoaOJ4M5dJ7r6UR0F-J0M5lvfCMy6Sl9HFjF9gT6cC-LjdNu-adFeywABsQz3yzPhvGZAo5sEcxrn2gATYlXz2-iz3f9tqhF9DDeWDFoCMo-a2R0BQewOa53pA2H6QgBIkon8DJ2zce95YtX5WBZjWp2YtG5IM0Lfip1Rkfoz5Spiqqb4kPaUJk62Yt3bA4hwC5izhZSWwALujN0dPAftNTYw4ENZ3LGqBu-AE5clqIaLjVfd_uGtt2Q9Ez61Yqm-SDUBagWPcjS9B_dUjx5zpkfWE2IA_hRBEyIwR12QuCubswBY9sHB4XjOifKhI8NMidiYz_FPSs5WsUN98KD7YxoklUUiNWZhPv0PjrnPDENnkHPNt-u-IhH50F5EGwMMevl55T3nnwTt7pbwju9Tp4U_ZiRJh-8GrxTk6Gip6coJlWtfqWHU_de9WbuVnj-fHTfjKpTXjkpQWy15ZQ3wSWswUKG4ga-u_J1T84yx448MFsP7jOvMkjakTpqHaLVSxQlpY-thqPI2ZEssZYmCKmNWbQhhVRP_MLatFPRZ6AZGCC1nu628qXP5HdRhp2YGlhpWHkhkjvtHMciMNYDQ1mEn2-fQQTB8p0wiClH69Xlq5T7M56FoVe1H5nzyP2so",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"type": "text",
+						"value": "aHhy7AIAvzPBdQdpB0YbaRH6N9Zw0rbhWCjenCOLhMZKSjq9tvenCidF8Y05",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "qty",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/customer/cart?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"cart"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "hlonDs2nLNjXoACagn2107GFXoytoXt3r463U6t4TEkhs9JGLwgCI50DdE9E",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customer delete cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijc4MDEzMTQ4Zjk2YjdlMjdmNjYyOTJiYTgxZjUyYzQ1NDc1NmQ3ODdiZWNhNTJmYWQyNzkzYjg3NWFmNWU0OGRmMGMyN2M1MzNkOTQ2MTRlIn0.eyJhdWQiOiIxIiwianRpIjoiNzgwMTMxNDhmOTZiN2UyN2Y2NjI5MmJhODFmNTJjNDU0NzU2ZDc4N2JlY2E1MmZhZDI3OTNiODc1YWY1ZTQ4ZGYwYzI3YzUzM2Q5NDYxNGUiLCJpYXQiOjE1NzIxOTI0MzMsIm5iZiI6MTU3MjE5MjQzMywiZXhwIjoxNTcyMjc4ODMzLCJzdWIiOiIxIiwic2NvcGVzIjpbImN1c3RvbWVyIl19.Oxh5oOCU-9Gyb9L6ERj78E55OHBbt4phG2MVwOlqPO6o6nv3Z6jyb-YM6XELad_Q_yjTi7iVmY2nDJte804tMz92BakGgwi6ncQhlJULXsr6i755KgJJoYY0cZ_yDbUUh1LIXBb3SuY_htjZFfUjTrNZnyZsbfYBi0PEtiE3HClAgNlek9MNXI85ryUstq2A9mjasIHacP5zbP7FfHgyS_rYoE4_CgfAzSR29rtUYoE9ZvkMEWiAbjP5bDmQC8bDo1ivgJ7DdYI_zI9A_pioKJapUngKMa08riuXQ5p7cF1UVrxXd0_c2StFjwUrihoJYouZAIdLRIr6ADIpyoXlv6HkLcvR_u2W0tvRc-r47uQWZITM6kxLB_1V_V-S9Ju1ISSCA90ZZUWsP2BoOW5BSt6MxphtbzIrTLoaFshPKj2mW3JLKvRzuLSebAqubGC9CXPJprG-5O7sVT0nJzfz9lcp1dBXuC-7qlc1GBpVOb8OhRI98e6vwbaSt1CLmlwed66HCo9AXs83MwOTXu9P4Mtpgoq5FCtdEdQKfiqly9aRhNAMzvwx_whaNi30H6875n8i4YYjXwkBgrIYNBlOEhgdrK49NuELWei3wh5NsboyE_-1H8gVLUVEqjmMbeAC8q-XjJ5ClokH2De8xEnaFVHsLDTowvN9BZdtnwGu4-I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"type": "text",
+						"value": "aHhy7AIAvzPBdQdpB0YbaRH6N9Zw0rbhWCjenCOLhMZKSjq9tvenCidF8Y05",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "qty",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "_method",
+							"value": "DELETE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/customer/cart?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"cart"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "hlonDs2nLNjXoACagn2107GFXoytoXt3r463U6t4TEkhs9JGLwgCI50DdE9E",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customer Purchase",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImJjOTkyNmIzMTQxNDZjM2NkZjJmNWJhNjFjNTU4NDAyMGVjZTc3MjIwMDBkZTVlYTg4YTA3ZTM2NmRiNWMxMjFlNGEzYjViZTIwZWEwZDI0In0.eyJhdWQiOiIxIiwianRpIjoiYmM5OTI2YjMxNDE0NmMzY2RmMmY1YmE2MWM1NTg0MDIwZWNlNzcyMjAwMGRlNWVhODhhMDdlMzY2ZGI1YzEyMWU0YTNiNWJlMjBlYTBkMjQiLCJpYXQiOjE1NzMyOTAzNjIsIm5iZiI6MTU3MzI5MDM2MiwiZXhwIjoxNTczMzc2NzYxLCJzdWIiOiIxIiwic2NvcGVzIjpbImN1c3RvbWVyIl19.ozq-3uwU0mM5kNeselMl4a-f_cPvEO29KGyUgD8zpMz3Jii7zUP0E8pznhW05q2jB98FBxeQXzU9eRk23mzMPLDNKFHXO67PVtRN4CN4AX8vYfTaKcyAPK6F-TBENkNwLaV02NqSgBBdbVnX-TqPrnR0l2NxrCzBVxc5ffjZamEYs--VSXBlejydnSecwVyiFBZrL0eNQCf2BC2UJ3xHjZXq49UCl3JIc40AjSHqMTzhsNitdXy_B8noM5xiO6gICLqmRY6lYKZZU8ZRbneHplmY3KiwF-mrembdaas2m3E27hv_KrGZpl-21B5Jnk79g3aMcTzzR-RV6rbWMKuJZU3ndDwkumZqvqCnODfEbD8wBoVm8K_AlhyxUV8R9eTt6wuAqhrcF-SjMwyPptz3Nt064Vkb3MjU3Dtyh690M8srMmhQmMPonyWO7CGows8icpTQlEZEbWx63Xtd-HdgrMZ4DaiAfZAGTye0wI4AtNCiKHIq0UJMKl2NCVEzTE89BtSG-Sllvups1oALBEWbPmTQtd44_8Z5wrQTSgALaRZSadDWO0thqaSAzzJk31ZsEnNdkO8zdfrfISZspqeEm6K-4fWT9xd3z4sMCt2_AZ4ItR2ijrcpSEYboSFXiFr9XqKKPZeB0EKlHZkhIBYI0u8aucEAG9-tMlGy6cteyoM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cartId[]",
+							"value": "16",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cartId[]",
+							"value": "21",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cartId[]",
+							"value": "22",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cartId[]",
+							"value": "23",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cartId[]",
+							"value": "25",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/customer/purchase",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"purchase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seller Register Not Complete",
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": [
+						{
+							"key": "addParamsToHeader",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "addEmptyParamsToSign",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenSecret",
+							"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo",
+							"type": "string"
+						},
+						{
+							"key": "token",
+							"value": "834235722-9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep",
+							"type": "string"
+						},
+						{
+							"key": "consumerSecret",
+							"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD",
+							"type": "string"
+						},
+						{
+							"key": "consumerKey",
+							"value": "5C1Zpu5VuwKknBJAJhxTI5kFj",
+							"type": "string"
+						},
+						{
+							"key": "signatureMethod",
+							"value": "HMAC-SHA1",
+							"type": "string"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"type": "text",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj"
+					},
+					{
+						"key": "ConsumerSecret",
+						"type": "text",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD"
+					},
+					{
+						"key": "AccessToken",
+						"type": "text",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"type": "text",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fullname",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "DOB",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "rezky221190",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test123#",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rezky.setiawan86@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/seller/register?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"register"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "User register"
+			},
+			"response": []
+		},
+		{
+			"name": "Seller Register",
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": [
+						{
+							"key": "addParamsToHeader",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "addEmptyParamsToSign",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenSecret",
+							"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo",
+							"type": "string"
+						},
+						{
+							"key": "token",
+							"value": "834235722-9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep",
+							"type": "string"
+						},
+						{
+							"key": "consumerSecret",
+							"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD",
+							"type": "string"
+						},
+						{
+							"key": "consumerKey",
+							"value": "5C1Zpu5VuwKknBJAJhxTI5kFj",
+							"type": "string"
+						},
+						{
+							"key": "signatureMethod",
+							"value": "HMAC-SHA1",
+							"type": "string"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj",
+						"type": "text"
+					},
+					{
+						"key": "ConsumerSecret",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD",
+						"type": "text"
+					},
+					{
+						"key": "AccessToken",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep",
+						"type": "text"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fullname",
+							"value": "rezkysetiawan",
+							"type": "text"
+						},
+						{
+							"key": "DOB",
+							"value": "1999-01-01",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "rezky221198",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test123#",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "0",
+							"description": "0 Female 1 Male",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rezky.setiawan87@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "089629238997",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "jakarta",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/seller/register?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"register"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "User register"
+			},
+			"response": []
+		},
+		{
+			"name": "Seller Login",
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": [
+						{
+							"key": "addParamsToHeader",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "addEmptyParamsToSign",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenSecret",
+							"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo",
+							"type": "string"
+						},
+						{
+							"key": "token",
+							"value": "834235722-9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep",
+							"type": "string"
+						},
+						{
+							"key": "consumerSecret",
+							"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD",
+							"type": "string"
+						},
+						{
+							"key": "consumerKey",
+							"value": "5C1Zpu5VuwKknBJAJhxTI5kFj",
+							"type": "string"
+						},
+						{
+							"key": "signatureMethod",
+							"value": "HMAC-SHA1",
+							"type": "string"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj",
+						"type": "text"
+					},
+					{
+						"key": "ConsumerSecret",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD",
+						"type": "text"
+					},
+					{
+						"key": "AccessToken",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep",
+						"type": "text"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fullname",
+							"value": "rezkysetiawan",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "DOB",
+							"value": "1999-01-01",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "rezky221190",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test123#",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "rezky.setiawan85@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "089629238997",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "jakarta",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/seller/login?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"login"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seller Profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjRhMDZiMmEzMzliYTkyZTQyYzY3ZDE0NGEwMmYyM2RiNzM5ODk0Y2ZhZTUzNGVjMTk0MjlmNjJlY2Y0MTgwM2U3NzQ5OGUwMTQxMmFjYWU5In0.eyJhdWQiOiIxIiwianRpIjoiNGEwNmIyYTMzOWJhOTJlNDJjNjdkMTQ0YTAyZjIzZGI3Mzk4OTRjZmFlNTM0ZWMxOTQyOWY2MmVjZjQxODAzZTc3NDk4ZTAxNDEyYWNhZTkiLCJpYXQiOjE1NzI3MTMyMDcsIm5iZiI6MTU3MjcxMzIwNywiZXhwIjoxNTcyNzk5NjA3LCJzdWIiOiIxIiwic2NvcGVzIjpbImN1c3RvbWVyIl19.pZhvCs1IVw50gFsZyzCE9nhBXKZasLhSPfqSyiNKJsKoaOJ4M5dJ7r6UR0F-J0M5lvfCMy6Sl9HFjF9gT6cC-LjdNu-adFeywABsQz3yzPhvGZAo5sEcxrn2gATYlXz2-iz3f9tqhF9DDeWDFoCMo-a2R0BQewOa53pA2H6QgBIkon8DJ2zce95YtX5WBZjWp2YtG5IM0Lfip1Rkfoz5Spiqqb4kPaUJk62Yt3bA4hwC5izhZSWwALujN0dPAftNTYw4ENZ3LGqBu-AE5clqIaLjVfd_uGtt2Q9Ez61Yqm-SDUBagWPcjS9B_dUjx5zpkfWE2IA_hRBEyIwR12QuCubswBY9sHB4XjOifKhI8NMidiYz_FPSs5WsUN98KD7YxoklUUiNWZhPv0PjrnPDENnkHPNt-u-IhH50F5EGwMMevl55T3nnwTt7pbwju9Tp4U_ZiRJh-8GrxTk6Gip6coJlWtfqWHU_de9WbuVnj-fHTfjKpTXjkpQWy15ZQ3wSWswUKG4ga-u_J1T84yx448MFsP7jOvMkjakTpqHaLVSxQlpY-thqPI2ZEssZYmCKmNWbQhhVRP_MLatFPRZ6AZGCC1nu628qXP5HdRhp2YGlhpWHkhkjvtHMciMNYDQ1mEn2-fQQTB8p0wiClH69Xlq5T7M56FoVe1H5nzyP2so",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"type": "text",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj"
+					},
+					{
+						"key": "ConsumerSecret",
+						"type": "text",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD"
+					},
+					{
+						"key": "AccessToken",
+						"type": "text",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"type": "text",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fullname",
+							"value": "rezkysetiawan",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "DOB",
+							"value": "1999-01-01",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "rezky221197",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test123#",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "rezky.setiawan85@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "089629238997",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "jakarta",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/customer/?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seller Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjE3YjY2ZTU3ZjJhNjE3MjI4YTUxYjVjM2Q1MDRhYzY1ZTgzZmU5ZmExZDc4MjVlNDJjYjk5MmQ0YTdkODQ1ZDY4MDZiMTczNzY0MWQ0ZDU2In0.eyJhdWQiOiIxIiwianRpIjoiMTdiNjZlNTdmMmE2MTcyMjhhNTFiNWMzZDUwNGFjNjVlODNmZTlmYTFkNzgyNWU0MmNiOTkyZDRhN2Q4NDVkNjgwNmIxNzM3NjQxZDRkNTYiLCJpYXQiOjE1NzI3MTI4NDUsIm5iZiI6MTU3MjcxMjg0NSwiZXhwIjoxNTcyNzk5MjQ1LCJzdWIiOiIxIiwic2NvcGVzIjpbInNlbGxlciJdfQ.GZRFUato7K1nhLOklkH4tCSZadAck6SrNhoIGaEugpvW9GBl2pyVGt5IItol--2jITgo7kaI4uL6BzNN1U-C46OxzXpxPOmpbgSRH6qkZo32HsHUTDfujQmTa9AFDk0723xqL75Jjw1YZB__osPId6cy3QX_sDIQqId7r9eyMnMCQQu66byApL6GKBN880Bsrw2SdLMYQDHMHwmb8Bqi4JfIcR8buZeNi4fOzClhAiFEsb0ZXk5YEYrtwWdZGmjLOmITF_-H_Or4hAcgBkAejircsRHdyQ0ugtxR_UqNPsQSDo2xGggJgSkCNThQoMXqu5c_Xv5NRmebGEkOOFFWrIyJJqPU-Pgz-xCwn5rToQ2yrk1XqQDlGTjAWxvFMI1bVHgGc2qM3tNn9U-4GmCqPI1yZggQK-TbY-R64PYREz30_4dY92VYU0sl6TV1hooZHsFZnsjU-Ow4T7ih_atn1CLEHXgi0EnhBJV9D9wHJ5e4V178jbcSnYseZ5aUh7USGK5DjEUBfo1DdyjHUxW-zQpxdlY7_1fnM95JJ9gSYteUVxH3SvJsyBs3dWdqqR3OG_AclequJM101-85_XbjM3RTgwZRUf5MNn65xEmzdp_sYP9cN9Xl1G0dvdatM2s3Bxv7bAz1hclk-sJ6xr7nubbhX6mVmerk3L8lmrD7M6E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"type": "text",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj"
+					},
+					{
+						"key": "ConsumerSecret",
+						"type": "text",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD"
+					},
+					{
+						"key": "AccessToken",
+						"type": "text",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"type": "text",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fullname",
+							"value": "rezkysetiawan",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "DOB",
+							"value": "1999-01-01",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "rezky221197",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test123#",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "rezky.setiawan85@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "089629238997",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "jakarta",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/seller/logout?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"logout"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seller Transaction",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"type": "text",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj"
+					},
+					{
+						"key": "ConsumerSecret",
+						"type": "text",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD"
+					},
+					{
+						"key": "AccessToken",
+						"type": "text",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"type": "text",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fullname",
+							"value": "rezkysetiawan",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "DOB",
+							"value": "1999-01-01",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "rezky221190",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test123#",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "rezky.setiawan85@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "089629238997",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "jakarta",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/seller/transaction?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"transaction"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "seller search product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjBjNTdlNzdiMGU4Zjc4M2ZiMjYwYjI2MTJlODE5NzI0MmVhMjNkNTU0ODU4ZjJmNDU2NWMzMWFjOGRiYmQ0M2UwZjQyNWI1NjQ2ZWM3ZTc1In0.eyJhdWQiOiIxIiwianRpIjoiMGM1N2U3N2IwZThmNzgzZmIyNjBiMjYxMmU4MTk3MjQyZWEyM2Q1NTQ4NThmMmY0NTY1YzMxYWM4ZGJiZDQzZTBmNDI1YjU2NDZlYzdlNzUiLCJpYXQiOjE1NzI3MTI4OTMsIm5iZiI6MTU3MjcxMjg5MywiZXhwIjoxNTcyNzk5MjkzLCJzdWIiOiIxIiwic2NvcGVzIjpbInNlbGxlciJdfQ.I7nvAWY12nWfD7uCez2LHWwNg-QILKVXpAPhohgYPHZ7p-6toZG1V6iLdCpLEpdpeavvBYKQuY0VYlbYaFASUiHGtIw4p5vwidbYOZDexXwzPLfx4BtZEGxlq7Iat5IDueIj03SD1pZ9u_tGMPDoV6herjA0epntVpFJlB6Pv20W4TUMKiZdOrwSAjTjKZdgYvg7U7m9cd6pihkp67sDjXvMpBQ1jFyGe6-avpnS9gGmgkjSa9On3ECf8NRZbbJHybuCjqtA8MnQ0k2UcIsfCl9nJWwhdGP6JSC1ALsJILayK6RU7iNeegjheUR1J3ghOje0suZ-xYyix2A1pl3UVIQiozSeicJKJTAyqH_HYbKigroU2eroDRwGe6LOSL6n_BKPEmmrOIxPpZyrx31YHMhY_fvHxrgmqDKIvYsPx9gkZVWnt8ZhLT43OcdkVP8S9y32CRL7a2trNSM5MjI-CQOSR5tTOINHSGTxy_IgZ7IO9g4Q-4piCnx4r-NDWMAaD6F7nwF6VhLnNySogYpBSElrIy8vhF9JBHeZH6Y5NdgzYwFN-0evSTm8MmURoVNfLkp7A_tIFKdrUp3AGAg7d6R_m5JG6CAW39XVGOiqP0vxZeHf-t-9ejbRlSGreqjH4e8Dv3A0Hc6Fd7tMoinssKqy0QL3LJimMR2W_MisSmk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj",
+						"type": "text"
+					},
+					{
+						"key": "ConsumerSecret",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD",
+						"type": "text"
+					},
+					{
+						"key": "AccessToken",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep",
+						"type": "text"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fullname",
+							"value": "rezkysetiawan",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "DOB",
+							"value": "1999-01-01",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "rezky2211977",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "Test123#",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sex",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "rezky.setiawan85@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "089629238997",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "jakarta",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/seller/product?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"product"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "seller search product by shop id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjBjNTdlNzdiMGU4Zjc4M2ZiMjYwYjI2MTJlODE5NzI0MmVhMjNkNTU0ODU4ZjJmNDU2NWMzMWFjOGRiYmQ0M2UwZjQyNWI1NjQ2ZWM3ZTc1In0.eyJhdWQiOiIxIiwianRpIjoiMGM1N2U3N2IwZThmNzgzZmIyNjBiMjYxMmU4MTk3MjQyZWEyM2Q1NTQ4NThmMmY0NTY1YzMxYWM4ZGJiZDQzZTBmNDI1YjU2NDZlYzdlNzUiLCJpYXQiOjE1NzI3MTI4OTMsIm5iZiI6MTU3MjcxMjg5MywiZXhwIjoxNTcyNzk5MjkzLCJzdWIiOiIxIiwic2NvcGVzIjpbInNlbGxlciJdfQ.I7nvAWY12nWfD7uCez2LHWwNg-QILKVXpAPhohgYPHZ7p-6toZG1V6iLdCpLEpdpeavvBYKQuY0VYlbYaFASUiHGtIw4p5vwidbYOZDexXwzPLfx4BtZEGxlq7Iat5IDueIj03SD1pZ9u_tGMPDoV6herjA0epntVpFJlB6Pv20W4TUMKiZdOrwSAjTjKZdgYvg7U7m9cd6pihkp67sDjXvMpBQ1jFyGe6-avpnS9gGmgkjSa9On3ECf8NRZbbJHybuCjqtA8MnQ0k2UcIsfCl9nJWwhdGP6JSC1ALsJILayK6RU7iNeegjheUR1J3ghOje0suZ-xYyix2A1pl3UVIQiozSeicJKJTAyqH_HYbKigroU2eroDRwGe6LOSL6n_BKPEmmrOIxPpZyrx31YHMhY_fvHxrgmqDKIvYsPx9gkZVWnt8ZhLT43OcdkVP8S9y32CRL7a2trNSM5MjI-CQOSR5tTOINHSGTxy_IgZ7IO9g4Q-4piCnx4r-NDWMAaD6F7nwF6VhLnNySogYpBSElrIy8vhF9JBHeZH6Y5NdgzYwFN-0evSTm8MmURoVNfLkp7A_tIFKdrUp3AGAg7d6R_m5JG6CAW39XVGOiqP0vxZeHf-t-9ejbRlSGreqjH4e8Dv3A0Hc6Fd7tMoinssKqy0QL3LJimMR2W_MisSmk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj",
+						"type": "text"
+					},
+					{
+						"key": "ConsumerSecret",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD",
+						"type": "text"
+					},
+					{
+						"key": "AccessToken",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep",
+						"type": "text"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fullname",
+							"value": "rezkysetiawan",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "DOB",
+							"value": "1999-01-01",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "rezky2211977",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "Test123#",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sex",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "rezky.setiawan85@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "089629238997",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "jakarta",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/seller/product?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"product"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seller Add Prodcut",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiY2ViMGI5OWNiY2I5Mzg0ODA1NmEzNWIwZmMzYzc1YWY2OTNlYzgwMTQyYWQ4NGE3ZWM4NGMxODBmNjNiZjIxOWE2ZWEyODJlZWZiMTBmIn0.eyJhdWQiOiIxIiwianRpIjoiM2JjZWIwYjk5Y2JjYjkzODQ4MDU2YTM1YjBmYzNjNzVhZjY5M2VjODAxNDJhZDg0YTdlYzg0YzE4MGY2M2JmMjE5YTZlYTI4MmVlZmIxMGYiLCJpYXQiOjE1NzI3ODE1ODAsIm5iZiI6MTU3Mjc4MTU4MCwiZXhwIjoxNTcyODY3OTc5LCJzdWIiOiIxIiwic2NvcGVzIjpbInNlbGxlciJdfQ.sDD3h1lHPQuEEaOZOb1wHLU_E7sja35UjG9tH0a5r5f1jlADgmzUdmT1z4jTmr-l6j0ScXwPlh-Hmj6pBWNa5Zj6ehY5NwBK-Q8axPaFfDbQqaFTj9f5jFtEdUOCG530l1CaQ88iCnv4Xzwps9Ae0cv5fj2msMOPgn-8rfpd52ur0OgwpTaOBgcNRP33dpNY3THEIliaadnH3PkoOPGBPr8WZ0fqA_SJ_gaDia0pAgeV1ny3fXDZ_F2OkzfgGs_2EyWF5hVDZlZ_vwuFagE9_0pe0p_5U-taDlAwfJRBjQiMa13sNrrFq4UBjmXvHWTMaoQwbaetDbjbpa91zia2kf15OdidAPjkqf9c9EAVNEDrjLi9FnAhbiHCTYSXqO9JLwPaqwFx-SSEF2UgcWy5LtSDFl7dMKmSeaUdj-el4RjdSJeHsFece7fCcinxHcWNjgyeoSPrEp35dWGB3f5LDY_HNeNFOj6ieNyClJ04QIZZdMMvP2qboxM0DfcKuXix-Viz2aeiZM3YR8dlTZ98ok9Z8UpchJJZwA8vIVsE5U87zbiSQdSObLijfsigabSd2wj2okm5-uOvIMeAptc50jKX6km2D-8TvGcOn_miEvXowmWXok8j31MF935S_x1stwboVnrkGMM3rUDck04pqzw94aDaZmP0Jif7qs1BQYA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj",
+						"type": "text"
+					},
+					{
+						"key": "ConsumerSecret",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD",
+						"type": "text"
+					},
+					{
+						"key": "AccessToken",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep",
+						"type": "text"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product_name",
+							"value": "Encu",
+							"type": "text"
+						},
+						{
+							"key": "product_price",
+							"value": "99999",
+							"type": "text"
+						},
+						{
+							"key": "product_stock",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "product_image",
+							"type": "file",
+							"src": "/C:/Users/rezky/Pictures/Leah's Farm Coloring Book 4.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/seller/product?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"product"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "aHhy7AIAvzPBdQdpB0YbaRH6N9Zw0rbhWCjenCOLhMZKSjq9tvenCidF8Y05",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seller Update Product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjBjNTdlNzdiMGU4Zjc4M2ZiMjYwYjI2MTJlODE5NzI0MmVhMjNkNTU0ODU4ZjJmNDU2NWMzMWFjOGRiYmQ0M2UwZjQyNWI1NjQ2ZWM3ZTc1In0.eyJhdWQiOiIxIiwianRpIjoiMGM1N2U3N2IwZThmNzgzZmIyNjBiMjYxMmU4MTk3MjQyZWEyM2Q1NTQ4NThmMmY0NTY1YzMxYWM4ZGJiZDQzZTBmNDI1YjU2NDZlYzdlNzUiLCJpYXQiOjE1NzI3MTI4OTMsIm5iZiI6MTU3MjcxMjg5MywiZXhwIjoxNTcyNzk5MjkzLCJzdWIiOiIxIiwic2NvcGVzIjpbInNlbGxlciJdfQ.I7nvAWY12nWfD7uCez2LHWwNg-QILKVXpAPhohgYPHZ7p-6toZG1V6iLdCpLEpdpeavvBYKQuY0VYlbYaFASUiHGtIw4p5vwidbYOZDexXwzPLfx4BtZEGxlq7Iat5IDueIj03SD1pZ9u_tGMPDoV6herjA0epntVpFJlB6Pv20W4TUMKiZdOrwSAjTjKZdgYvg7U7m9cd6pihkp67sDjXvMpBQ1jFyGe6-avpnS9gGmgkjSa9On3ECf8NRZbbJHybuCjqtA8MnQ0k2UcIsfCl9nJWwhdGP6JSC1ALsJILayK6RU7iNeegjheUR1J3ghOje0suZ-xYyix2A1pl3UVIQiozSeicJKJTAyqH_HYbKigroU2eroDRwGe6LOSL6n_BKPEmmrOIxPpZyrx31YHMhY_fvHxrgmqDKIvYsPx9gkZVWnt8ZhLT43OcdkVP8S9y32CRL7a2trNSM5MjI-CQOSR5tTOINHSGTxy_IgZ7IO9g4Q-4piCnx4r-NDWMAaD6F7nwF6VhLnNySogYpBSElrIy8vhF9JBHeZH6Y5NdgzYwFN-0evSTm8MmURoVNfLkp7A_tIFKdrUp3AGAg7d6R_m5JG6CAW39XVGOiqP0vxZeHf-t-9ejbRlSGreqjH4e8Dv3A0Hc6Fd7tMoinssKqy0QL3LJimMR2W_MisSmk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"type": "text",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj"
+					},
+					{
+						"key": "ConsumerSecret",
+						"type": "text",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD"
+					},
+					{
+						"key": "AccessToken",
+						"type": "text",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"type": "text",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "product_name",
+							"value": "Encu",
+							"type": "text"
+						},
+						{
+							"key": "product_price",
+							"value": "99999",
+							"type": "text"
+						},
+						{
+							"key": "product_stock",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "product_image",
+							"type": "file",
+							"src": "/C:/Users/rezky/Downloads/PPL/kakap.png"
+						},
+						{
+							"key": "_method",
+							"value": "PUT",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/seller/product?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"product"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "aHhy7AIAvzPBdQdpB0YbaRH6N9Zw0rbhWCjenCOLhMZKSjq9tvenCidF8Y05",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seller Delete Product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjFiMjA2NzcwNzA1OGEwODMwZTBjM2I2MTBmNzcwNTRkYTI4YWUwNDFiNzdiNDQ2OGU5YTZlNmI4MWM2MmY1NzEzMzk0NzE1ZjdlMTg3MWZhIn0.eyJhdWQiOiIxIiwianRpIjoiMWIyMDY3NzA3MDU4YTA4MzBlMGMzYjYxMGY3NzA1NGRhMjhhZTA0MWI3N2I0NDY4ZTlhNmU2YjgxYzYyZjU3MTMzOTQ3MTVmN2UxODcxZmEiLCJpYXQiOjE1NzI3ODY0NTYsIm5iZiI6MTU3Mjc4NjQ1NiwiZXhwIjoxNTcyODcyODU2LCJzdWIiOiIzIiwic2NvcGVzIjpbInNlbGxlciJdfQ.AM3gVUAf1PLmTONxQ6i5CTc04djb8cGAd9leR7L47UnBqaWh8SVmAyBoZqVkOwH5zz4yOhWbjKgnOnnF9TKPqvW42N3V7Q0gaA_1DH1ZjAX8sjIQxyhUz-JD6s2QxYAWZKsBrceKY5W3q-BnknMNXSMrQwTBGxM24oj44JhhTi25RFuwzjcFmS-L3AkAt0wXNRKyPsac8kaXLR2lnvKQTaNrghvGicZjOIB8DP5hUKPEKXCSrjhu2yOBUgax5FazvEGLkvCiolzS1U-vWhRpIaFJcaW5Bamb_6KTkOYifjjbxdLOh3qQx0W1AP_6ltnBQhwu50c0KJbJbmouAGOxSLuDP0-wAyscIQXqpudey1Ifu1WsgV6fOCwc5wHwKE15ZC0w8-3TItI5N86YtGDvQ03eD4Nt4rHZHc0yCFQMaTlmOylc8ApltZeL9Jaqa8Ue8_j_DCmEiJXlYssw0Bgkm5MeiJHJUbwZ5Z4Ad_NVKr_jZunncuy93Y5V_zQpimIbqlAgnhVRQCIN1zeuiBlSVAkRrZnxA3Xxm_2w1J2DAMq1dlxyyyOSX_F0sww7BHa4Msaz6FA14ndjGXJwHt3--GBpHfNHmxs0hT1H38C6bR7GGFL9_doxh4U1if-wLLtDs8Ay2J66WH0BD9pqXE2_HXfTEViwb8kGQFkC90P2FXE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"type": "text",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj"
+					},
+					{
+						"key": "ConsumerSecret",
+						"type": "text",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD"
+					},
+					{
+						"key": "AccessToken",
+						"type": "text",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"type": "text",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "productName",
+							"value": "Encu",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "productPrice",
+							"value": "99999",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "productStock",
+							"value": "10",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "productImage",
+							"type": "file",
+							"src": "/C:/Users/rezky/Pictures/Leah's Farm Coloring Book 4.png",
+							"disabled": true
+						},
+						{
+							"key": "_method",
+							"value": "DELETE",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/seller/product?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"product"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "aHhy7AIAvzPBdQdpB0YbaRH6N9Zw0rbhWCjenCOLhMZKSjq9tvenCidF8Y05",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seller add to cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjI1N2RiOTJhZGRhOTZiMTViMGEwM2JlNmRlNGFhMmUyYzE3NDk1NjUzYWNiZjhiOWE1OTk0MzUyM2I4MTgyNjdhNzgxYzI5YjQ4MDYxMjU4In0.eyJhdWQiOiIxIiwianRpIjoiMjU3ZGI5MmFkZGE5NmIxNWIwYTAzYmU2ZGU0YWEyZTJjMTc0OTU2NTNhY2JmOGI5YTU5OTQzNTIzYjgxODI2N2E3ODFjMjliNDgwNjEyNTgiLCJpYXQiOjE1NzI3MTcxMDEsIm5iZiI6MTU3MjcxNzEwMSwiZXhwIjoxNTcyODAzNTAwLCJzdWIiOiIxIiwic2NvcGVzIjpbImN1c3RvbWVyIl19.HKp-s8TrL6xzBmaoh9WvGO2WZgkHIFsxaxEjdv4u1CkkFcyt-MNYOebncD_Fp8Yjn3GKvT667io79O6RiLOOWfTWTeyRcI6zSnaOd35p37I_mEbEej2eu8v7mrKbb_8FLr4t9p5HjXInGtk6Ga2ZL5SNogvZ07Gbpfvc-ZnLAwqT3c72DTgZ99OdXtp5SaL-4u3Ps8CkWpCRqhp5V0T7jOQOg5pMk-CLc9UAao12lYXwIysJwfa55tSe7CZGmKAqu1rQVZ3dU8hNnbxbmEqLSngvapJPM4kHIChVPmmUb44xCpON0DgY8doId536rzYfR678QdEieAoRe6mT4YA2XuxVsRcXubj6IkCh8LVugnvoHPkVFD-Oh8Pka9xaz1x9A4mthDgTJb4Qi91dhgqdvZFRF21SjeMj45K7XH-lQu6XDpzjEWFyj7AlTL8-T0tj8n1Hblkd8DORROBTcAZ7FBdFuf0SPEdzUl20OJPHQI0vR_9duyuTiG8GZr6vbEIUYOF8GM5edaUFmYHFQtTFeYrQ3ofpVdnry6QLriELfV6JIEarqyZloBujbxB0tJC3uGjt6AVyg1iLjBrsbc1FzpkS7amYoDPqOcBqBiNyCscBCC2pmhBOqdb4vE8H55OxVby21xd7dgG4cqaQQLnRDoGs9dcxE2ngxyGgwski6KI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "aHhy7AIAvzPBdQdpB0YbaRH6N9Zw0rbhWCjenCOLhMZKSjq9tvenCidF8Y05",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "qty",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/customer/cart?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"cart"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "hlonDs2nLNjXoACagn2107GFXoytoXt3r463U6t4TEkhs9JGLwgCI50DdE9E",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seller update cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjRhMDZiMmEzMzliYTkyZTQyYzY3ZDE0NGEwMmYyM2RiNzM5ODk0Y2ZhZTUzNGVjMTk0MjlmNjJlY2Y0MTgwM2U3NzQ5OGUwMTQxMmFjYWU5In0.eyJhdWQiOiIxIiwianRpIjoiNGEwNmIyYTMzOWJhOTJlNDJjNjdkMTQ0YTAyZjIzZGI3Mzk4OTRjZmFlNTM0ZWMxOTQyOWY2MmVjZjQxODAzZTc3NDk4ZTAxNDEyYWNhZTkiLCJpYXQiOjE1NzI3MTMyMDcsIm5iZiI6MTU3MjcxMzIwNywiZXhwIjoxNTcyNzk5NjA3LCJzdWIiOiIxIiwic2NvcGVzIjpbImN1c3RvbWVyIl19.pZhvCs1IVw50gFsZyzCE9nhBXKZasLhSPfqSyiNKJsKoaOJ4M5dJ7r6UR0F-J0M5lvfCMy6Sl9HFjF9gT6cC-LjdNu-adFeywABsQz3yzPhvGZAo5sEcxrn2gATYlXz2-iz3f9tqhF9DDeWDFoCMo-a2R0BQewOa53pA2H6QgBIkon8DJ2zce95YtX5WBZjWp2YtG5IM0Lfip1Rkfoz5Spiqqb4kPaUJk62Yt3bA4hwC5izhZSWwALujN0dPAftNTYw4ENZ3LGqBu-AE5clqIaLjVfd_uGtt2Q9Ez61Yqm-SDUBagWPcjS9B_dUjx5zpkfWE2IA_hRBEyIwR12QuCubswBY9sHB4XjOifKhI8NMidiYz_FPSs5WsUN98KD7YxoklUUiNWZhPv0PjrnPDENnkHPNt-u-IhH50F5EGwMMevl55T3nnwTt7pbwju9Tp4U_ZiRJh-8GrxTk6Gip6coJlWtfqWHU_de9WbuVnj-fHTfjKpTXjkpQWy15ZQ3wSWswUKG4ga-u_J1T84yx448MFsP7jOvMkjakTpqHaLVSxQlpY-thqPI2ZEssZYmCKmNWbQhhVRP_MLatFPRZ6AZGCC1nu628qXP5HdRhp2YGlhpWHkhkjvtHMciMNYDQ1mEn2-fQQTB8p0wiClH69Xlq5T7M56FoVe1H5nzyP2so",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"type": "text",
+						"value": "aHhy7AIAvzPBdQdpB0YbaRH6N9Zw0rbhWCjenCOLhMZKSjq9tvenCidF8Y05",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "qty",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/customer/cart?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"cart"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "hlonDs2nLNjXoACagn2107GFXoytoXt3r463U6t4TEkhs9JGLwgCI50DdE9E",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seller delete cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijc4MDEzMTQ4Zjk2YjdlMjdmNjYyOTJiYTgxZjUyYzQ1NDc1NmQ3ODdiZWNhNTJmYWQyNzkzYjg3NWFmNWU0OGRmMGMyN2M1MzNkOTQ2MTRlIn0.eyJhdWQiOiIxIiwianRpIjoiNzgwMTMxNDhmOTZiN2UyN2Y2NjI5MmJhODFmNTJjNDU0NzU2ZDc4N2JlY2E1MmZhZDI3OTNiODc1YWY1ZTQ4ZGYwYzI3YzUzM2Q5NDYxNGUiLCJpYXQiOjE1NzIxOTI0MzMsIm5iZiI6MTU3MjE5MjQzMywiZXhwIjoxNTcyMjc4ODMzLCJzdWIiOiIxIiwic2NvcGVzIjpbImN1c3RvbWVyIl19.Oxh5oOCU-9Gyb9L6ERj78E55OHBbt4phG2MVwOlqPO6o6nv3Z6jyb-YM6XELad_Q_yjTi7iVmY2nDJte804tMz92BakGgwi6ncQhlJULXsr6i755KgJJoYY0cZ_yDbUUh1LIXBb3SuY_htjZFfUjTrNZnyZsbfYBi0PEtiE3HClAgNlek9MNXI85ryUstq2A9mjasIHacP5zbP7FfHgyS_rYoE4_CgfAzSR29rtUYoE9ZvkMEWiAbjP5bDmQC8bDo1ivgJ7DdYI_zI9A_pioKJapUngKMa08riuXQ5p7cF1UVrxXd0_c2StFjwUrihoJYouZAIdLRIr6ADIpyoXlv6HkLcvR_u2W0tvRc-r47uQWZITM6kxLB_1V_V-S9Ju1ISSCA90ZZUWsP2BoOW5BSt6MxphtbzIrTLoaFshPKj2mW3JLKvRzuLSebAqubGC9CXPJprG-5O7sVT0nJzfz9lcp1dBXuC-7qlc1GBpVOb8OhRI98e6vwbaSt1CLmlwed66HCo9AXs83MwOTXu9P4Mtpgoq5FCtdEdQKfiqly9aRhNAMzvwx_whaNi30H6875n8i4YYjXwkBgrIYNBlOEhgdrK49NuELWei3wh5NsboyE_-1H8gVLUVEqjmMbeAC8q-XjJ5ClokH2De8xEnaFVHsLDTowvN9BZdtnwGu4-I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"type": "text",
+						"value": "aHhy7AIAvzPBdQdpB0YbaRH6N9Zw0rbhWCjenCOLhMZKSjq9tvenCidF8Y05",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "qty",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/customer/cart?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"cart"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "hlonDs2nLNjXoACagn2107GFXoytoXt3r463U6t4TEkhs9JGLwgCI50DdE9E",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seller view cart",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjRhMDZiMmEzMzliYTkyZTQyYzY3ZDE0NGEwMmYyM2RiNzM5ODk0Y2ZhZTUzNGVjMTk0MjlmNjJlY2Y0MTgwM2U3NzQ5OGUwMTQxMmFjYWU5In0.eyJhdWQiOiIxIiwianRpIjoiNGEwNmIyYTMzOWJhOTJlNDJjNjdkMTQ0YTAyZjIzZGI3Mzk4OTRjZmFlNTM0ZWMxOTQyOWY2MmVjZjQxODAzZTc3NDk4ZTAxNDEyYWNhZTkiLCJpYXQiOjE1NzI3MTMyMDcsIm5iZiI6MTU3MjcxMzIwNywiZXhwIjoxNTcyNzk5NjA3LCJzdWIiOiIxIiwic2NvcGVzIjpbImN1c3RvbWVyIl19.pZhvCs1IVw50gFsZyzCE9nhBXKZasLhSPfqSyiNKJsKoaOJ4M5dJ7r6UR0F-J0M5lvfCMy6Sl9HFjF9gT6cC-LjdNu-adFeywABsQz3yzPhvGZAo5sEcxrn2gATYlXz2-iz3f9tqhF9DDeWDFoCMo-a2R0BQewOa53pA2H6QgBIkon8DJ2zce95YtX5WBZjWp2YtG5IM0Lfip1Rkfoz5Spiqqb4kPaUJk62Yt3bA4hwC5izhZSWwALujN0dPAftNTYw4ENZ3LGqBu-AE5clqIaLjVfd_uGtt2Q9Ez61Yqm-SDUBagWPcjS9B_dUjx5zpkfWE2IA_hRBEyIwR12QuCubswBY9sHB4XjOifKhI8NMidiYz_FPSs5WsUN98KD7YxoklUUiNWZhPv0PjrnPDENnkHPNt-u-IhH50F5EGwMMevl55T3nnwTt7pbwju9Tp4U_ZiRJh-8GrxTk6Gip6coJlWtfqWHU_de9WbuVnj-fHTfjKpTXjkpQWy15ZQ3wSWswUKG4ga-u_J1T84yx448MFsP7jOvMkjakTpqHaLVSxQlpY-thqPI2ZEssZYmCKmNWbQhhVRP_MLatFPRZ6AZGCC1nu628qXP5HdRhp2YGlhpWHkhkjvtHMciMNYDQ1mEn2-fQQTB8p0wiClH69Xlq5T7M56FoVe1H5nzyP2so",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "aHhy7AIAvzPBdQdpB0YbaRH6N9Zw0rbhWCjenCOLhMZKSjq9tvenCidF8Y05",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "productId",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "qty",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/customer/cart?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"cart"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "hlonDs2nLNjXoACagn2107GFXoytoXt3r463U6t4TEkhs9JGLwgCI50DdE9E",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seller Purchase",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImRhNjRkMmY2NWExYzI0NzAzMzJhM2QxZDlhYjUwNjkxMTk0Njc0ZmZkN2M1MzdkNjNlM2M5NWVlNGFhNzYzMzJkODVhYjUxZDdlMDAyOWIzIn0.eyJhdWQiOiIxIiwianRpIjoiZGE2NGQyZjY1YTFjMjQ3MDMzMmEzZDFkOWFiNTA2OTExOTQ2NzRmZmQ3YzUzN2Q2M2UzYzk1ZWU0YWE3NjMzMmQ4NWFiNTFkN2UwMDI5YjMiLCJpYXQiOjE1NzI3ODE2MDQsIm5iZiI6MTU3Mjc4MTYwNCwiZXhwIjoxNTcyODY4MDA0LCJzdWIiOiIxIiwic2NvcGVzIjpbImN1c3RvbWVyIl19.aErbLy9qTsUKEN0oAqhe8vteI7L5xn6Fwgl_8MRCzJ1nL6DQ3-q2GAy7bo-wM-C_a2Lm0Uzbf52_huY0iwGgTIEppSlKXMU2i4V3kHsPUh9iUvwAhixSqudVkXMwOp2e1UsSDnyMAYg8rTvYzwcIwEjeQReFklcYmcF3IhJEhD43ko916kL9Zk1dcjs7mLhhfgF6vzEraws5AEsGBmU14_-LPJgnHT2FCssIXvb1vDJvtXqENkL6sSmPzeA_EelEbgPO4i1tDgNJgJiYk3jY4ac9h8IP6r_1vn4ue40Efq09mcYdjJUNEKzUTs04IctTXOmamxmVdTh0TrZbIDbOL1JNi7ZleoLF2iB0QFb3VsShNWB0C88wdhLHWQVN8tzSh986280u2VpE4cmbWPkJKu3u9B26Be5iedECDKbp1Q-tfz7mm417KKiFZMwUDYC1TyqCog7H45kxXISekhEn_5Hc1HUUH_41eBKsD06Un0NFNuAjulrp8Y7w6SEbIXIQDBZbhqq8YSexpKwiqGDTWP0WBaqM_bqH7digJ_SPzCKqN0aE2YRJI8D6KWlvlNiPQTYAKBw7grOcEFFLqDg60b_hkMIlVj0oV4RzyptuBzg-Z9FAAm8z9Cq_XsLpOL94jru-XUnfx53hgo8sHpWGj5_Mg9T3oi2vYEN8CyUsExE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cartId[]",
+							"value": "16",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cartId[]",
+							"value": "21",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cartId[]",
+							"value": "22",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cartId[]",
+							"value": "23",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cartId[]",
+							"value": "25",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/customer/purchase",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"purchase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Supplier Register",
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": [
+						{
+							"key": "addParamsToHeader",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "addEmptyParamsToSign",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenSecret",
+							"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo",
+							"type": "string"
+						},
+						{
+							"key": "token",
+							"value": "834235722-9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep",
+							"type": "string"
+						},
+						{
+							"key": "consumerSecret",
+							"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD",
+							"type": "string"
+						},
+						{
+							"key": "consumerKey",
+							"value": "5C1Zpu5VuwKknBJAJhxTI5kFj",
+							"type": "string"
+						},
+						{
+							"key": "signatureMethod",
+							"value": "HMAC-SHA1",
+							"type": "string"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj",
+						"type": "text"
+					},
+					{
+						"key": "ConsumerSecret",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD",
+						"type": "text"
+					},
+					{
+						"key": "AccessToken",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep",
+						"type": "text"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fullname",
+							"value": "rezkysetiawan",
+							"type": "text"
+						},
+						{
+							"key": "DOB",
+							"value": "1999-01-01",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "rezky2211990",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test123#",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "0",
+							"description": "0 Female 1 Male",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rezky.setiawan890@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "089629238997",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "jakarta",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/supplier/register?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"supplier",
+						"register"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "User register"
+			},
+			"response": []
+		},
+		{
+			"name": "Supplier Login",
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": [
+						{
+							"key": "addParamsToHeader",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "addEmptyParamsToSign",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenSecret",
+							"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo",
+							"type": "string"
+						},
+						{
+							"key": "token",
+							"value": "834235722-9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep",
+							"type": "string"
+						},
+						{
+							"key": "consumerSecret",
+							"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD",
+							"type": "string"
+						},
+						{
+							"key": "consumerKey",
+							"value": "5C1Zpu5VuwKknBJAJhxTI5kFj",
+							"type": "string"
+						},
+						{
+							"key": "signatureMethod",
+							"value": "HMAC-SHA1",
+							"type": "string"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj",
+						"type": "text"
+					},
+					{
+						"key": "ConsumerSecret",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD",
+						"type": "text"
+					},
+					{
+						"key": "AccessToken",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep",
+						"type": "text"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fullname",
+							"value": "rezkysetiawan",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "DOB",
+							"value": "1999-01-01",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "rezky221190",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test123#",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "rezky.setiawan85@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "089629238997",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "jakarta",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/supplier/login?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"supplier",
+						"login"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Supplier Profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImRmOTlmMDZkNmUyZjk1ZDIwYTM5OTJjZWQ2YTVhMTZhYzk3NmVjYzFkMWU5NGJlMTQ0YzU4ZTJjOTRhZjkxNjY5MmNjMTQ3N2FkZDU2YzViIn0.eyJhdWQiOiIxIiwianRpIjoiZGY5OWYwNmQ2ZTJmOTVkMjBhMzk5MmNlZDZhNWExNmFjOTc2ZWNjMWQxZTk0YmUxNDRjNThlMmM5NGFmOTE2NjkyY2MxNDc3YWRkNTZjNWIiLCJpYXQiOjE1NzQ3MDMwNzQsIm5iZiI6MTU3NDcwMzA3NCwiZXhwIjoxNTc0Nzg5NDc0LCJzdWIiOiI0Iiwic2NvcGVzIjpbInN1cHBsaWVyIl19.ceMMEb-rfYbCATjJdCu1a1836RAy_uY8eeNYRhMgb4bzpDg3HGuRPM44WoiN9l5OEyIU3uXr_MMWHVNr0u7RCcyK8tFqK1A-_vFX-SftjSKMgXl29xe4Vrbeu86SNk02V_k5vUoqPk6IUqi64kzCfVCUvLIdTEQKDZ1n-UOwuwmFjKCO2vCF8T0oNPWXs6Se0wHjYgli-7HhQ-5RQcCAKUYPwjN80o2neNr8QwVNNTIPPm76rCNhQFr6WHkU4Xzv0mrI99PyQH_3aGy9TqXTrXrdRCv5V5WqqKFgnsHNRkopyXvEUNpp0GztoBckYIN4J2saxZQtj1C51vrAem3odnv18pcRWiS6FRVtQCYdQXd9si9_kd4FU70AoTwT-GsZ4cd2grnhKsnNpnOOGAbPRn2ogsdtgT0jYz_tM4wLSpgWNx8hv6xgfCsdDWG6z0H0RIKEjkjZGGe8Qg-yFFUrhc2E-YlaW9cmGi90vCB7Fu1ux55zM_GxOC3A1tRDtEka9xtdF2Yq-IwOKr5S0SkTKPfmyt49VeNU6QPDTj0195ShZMN5TKgSK1us6j54uKo6omlU6GXe8b6AoDm7tHG-ZwhSdfV9suj6X8kJCxaWEmDVUkezkPuOPB_TCrY5q3uM7CSdFVAJQm83krOBQLt11byJvlbI1ka3lAEfARpVvb8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"type": "text",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj"
+					},
+					{
+						"key": "ConsumerSecret",
+						"type": "text",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD"
+					},
+					{
+						"key": "AccessToken",
+						"type": "text",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"type": "text",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fullname",
+							"value": "rezkysetiawan",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "DOB",
+							"value": "1999-01-01",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "rezky221197",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test123#",
+							"type": "text"
+						},
+						{
+							"key": "sex",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "rezky.setiawan85@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "089629238997",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "jakarta",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/supplier/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"supplier",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Supplier Add Prodcut",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImRmOTlmMDZkNmUyZjk1ZDIwYTM5OTJjZWQ2YTVhMTZhYzk3NmVjYzFkMWU5NGJlMTQ0YzU4ZTJjOTRhZjkxNjY5MmNjMTQ3N2FkZDU2YzViIn0.eyJhdWQiOiIxIiwianRpIjoiZGY5OWYwNmQ2ZTJmOTVkMjBhMzk5MmNlZDZhNWExNmFjOTc2ZWNjMWQxZTk0YmUxNDRjNThlMmM5NGFmOTE2NjkyY2MxNDc3YWRkNTZjNWIiLCJpYXQiOjE1NzQ3MDMwNzQsIm5iZiI6MTU3NDcwMzA3NCwiZXhwIjoxNTc0Nzg5NDc0LCJzdWIiOiI0Iiwic2NvcGVzIjpbInN1cHBsaWVyIl19.ceMMEb-rfYbCATjJdCu1a1836RAy_uY8eeNYRhMgb4bzpDg3HGuRPM44WoiN9l5OEyIU3uXr_MMWHVNr0u7RCcyK8tFqK1A-_vFX-SftjSKMgXl29xe4Vrbeu86SNk02V_k5vUoqPk6IUqi64kzCfVCUvLIdTEQKDZ1n-UOwuwmFjKCO2vCF8T0oNPWXs6Se0wHjYgli-7HhQ-5RQcCAKUYPwjN80o2neNr8QwVNNTIPPm76rCNhQFr6WHkU4Xzv0mrI99PyQH_3aGy9TqXTrXrdRCv5V5WqqKFgnsHNRkopyXvEUNpp0GztoBckYIN4J2saxZQtj1C51vrAem3odnv18pcRWiS6FRVtQCYdQXd9si9_kd4FU70AoTwT-GsZ4cd2grnhKsnNpnOOGAbPRn2ogsdtgT0jYz_tM4wLSpgWNx8hv6xgfCsdDWG6z0H0RIKEjkjZGGe8Qg-yFFUrhc2E-YlaW9cmGi90vCB7Fu1ux55zM_GxOC3A1tRDtEka9xtdF2Yq-IwOKr5S0SkTKPfmyt49VeNU6QPDTj0195ShZMN5TKgSK1us6j54uKo6omlU6GXe8b6AoDm7tHG-ZwhSdfV9suj6X8kJCxaWEmDVUkezkPuOPB_TCrY5q3uM7CSdFVAJQm83krOBQLt11byJvlbI1ka3lAEfARpVvb8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj",
+						"type": "text"
+					},
+					{
+						"key": "ConsumerSecret",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD",
+						"type": "text"
+					},
+					{
+						"key": "AccessToken",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep",
+						"type": "text"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product_name",
+							"value": "Encu",
+							"type": "text"
+						},
+						{
+							"key": "product_price",
+							"value": "99999",
+							"type": "text"
+						},
+						{
+							"key": "product_stock",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "product_image",
+							"type": "file",
+							"src": "/C:/Users/rezky/Pictures/Leah's Farm Coloring Book 4.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/supplier/product?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"supplier",
+						"product"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "aHhy7AIAvzPBdQdpB0YbaRH6N9Zw0rbhWCjenCOLhMZKSjq9tvenCidF8Y05",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Supplier Update Product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjBjNTdlNzdiMGU4Zjc4M2ZiMjYwYjI2MTJlODE5NzI0MmVhMjNkNTU0ODU4ZjJmNDU2NWMzMWFjOGRiYmQ0M2UwZjQyNWI1NjQ2ZWM3ZTc1In0.eyJhdWQiOiIxIiwianRpIjoiMGM1N2U3N2IwZThmNzgzZmIyNjBiMjYxMmU4MTk3MjQyZWEyM2Q1NTQ4NThmMmY0NTY1YzMxYWM4ZGJiZDQzZTBmNDI1YjU2NDZlYzdlNzUiLCJpYXQiOjE1NzI3MTI4OTMsIm5iZiI6MTU3MjcxMjg5MywiZXhwIjoxNTcyNzk5MjkzLCJzdWIiOiIxIiwic2NvcGVzIjpbInNlbGxlciJdfQ.I7nvAWY12nWfD7uCez2LHWwNg-QILKVXpAPhohgYPHZ7p-6toZG1V6iLdCpLEpdpeavvBYKQuY0VYlbYaFASUiHGtIw4p5vwidbYOZDexXwzPLfx4BtZEGxlq7Iat5IDueIj03SD1pZ9u_tGMPDoV6herjA0epntVpFJlB6Pv20W4TUMKiZdOrwSAjTjKZdgYvg7U7m9cd6pihkp67sDjXvMpBQ1jFyGe6-avpnS9gGmgkjSa9On3ECf8NRZbbJHybuCjqtA8MnQ0k2UcIsfCl9nJWwhdGP6JSC1ALsJILayK6RU7iNeegjheUR1J3ghOje0suZ-xYyix2A1pl3UVIQiozSeicJKJTAyqH_HYbKigroU2eroDRwGe6LOSL6n_BKPEmmrOIxPpZyrx31YHMhY_fvHxrgmqDKIvYsPx9gkZVWnt8ZhLT43OcdkVP8S9y32CRL7a2trNSM5MjI-CQOSR5tTOINHSGTxy_IgZ7IO9g4Q-4piCnx4r-NDWMAaD6F7nwF6VhLnNySogYpBSElrIy8vhF9JBHeZH6Y5NdgzYwFN-0evSTm8MmURoVNfLkp7A_tIFKdrUp3AGAg7d6R_m5JG6CAW39XVGOiqP0vxZeHf-t-9ejbRlSGreqjH4e8Dv3A0Hc6Fd7tMoinssKqy0QL3LJimMR2W_MisSmk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"type": "text",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj"
+					},
+					{
+						"key": "ConsumerSecret",
+						"type": "text",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD"
+					},
+					{
+						"key": "AccessToken",
+						"type": "text",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"type": "text",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "product_name",
+							"value": "Encu",
+							"type": "text"
+						},
+						{
+							"key": "product_price",
+							"value": "99999",
+							"type": "text"
+						},
+						{
+							"key": "product_stock",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "product_image",
+							"type": "file",
+							"src": "/C:/Users/rezky/Downloads/PPL/kakap.png"
+						},
+						{
+							"key": "_method",
+							"value": "PUT",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/supplier/product?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"supplier",
+						"product"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "aHhy7AIAvzPBdQdpB0YbaRH6N9Zw0rbhWCjenCOLhMZKSjq9tvenCidF8Y05",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Supplier Delete Product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjFiMjA2NzcwNzA1OGEwODMwZTBjM2I2MTBmNzcwNTRkYTI4YWUwNDFiNzdiNDQ2OGU5YTZlNmI4MWM2MmY1NzEzMzk0NzE1ZjdlMTg3MWZhIn0.eyJhdWQiOiIxIiwianRpIjoiMWIyMDY3NzA3MDU4YTA4MzBlMGMzYjYxMGY3NzA1NGRhMjhhZTA0MWI3N2I0NDY4ZTlhNmU2YjgxYzYyZjU3MTMzOTQ3MTVmN2UxODcxZmEiLCJpYXQiOjE1NzI3ODY0NTYsIm5iZiI6MTU3Mjc4NjQ1NiwiZXhwIjoxNTcyODcyODU2LCJzdWIiOiIzIiwic2NvcGVzIjpbInNlbGxlciJdfQ.AM3gVUAf1PLmTONxQ6i5CTc04djb8cGAd9leR7L47UnBqaWh8SVmAyBoZqVkOwH5zz4yOhWbjKgnOnnF9TKPqvW42N3V7Q0gaA_1DH1ZjAX8sjIQxyhUz-JD6s2QxYAWZKsBrceKY5W3q-BnknMNXSMrQwTBGxM24oj44JhhTi25RFuwzjcFmS-L3AkAt0wXNRKyPsac8kaXLR2lnvKQTaNrghvGicZjOIB8DP5hUKPEKXCSrjhu2yOBUgax5FazvEGLkvCiolzS1U-vWhRpIaFJcaW5Bamb_6KTkOYifjjbxdLOh3qQx0W1AP_6ltnBQhwu50c0KJbJbmouAGOxSLuDP0-wAyscIQXqpudey1Ifu1WsgV6fOCwc5wHwKE15ZC0w8-3TItI5N86YtGDvQ03eD4Nt4rHZHc0yCFQMaTlmOylc8ApltZeL9Jaqa8Ue8_j_DCmEiJXlYssw0Bgkm5MeiJHJUbwZ5Z4Ad_NVKr_jZunncuy93Y5V_zQpimIbqlAgnhVRQCIN1zeuiBlSVAkRrZnxA3Xxm_2w1J2DAMq1dlxyyyOSX_F0sww7BHa4Msaz6FA14ndjGXJwHt3--GBpHfNHmxs0hT1H38C6bR7GGFL9_doxh4U1if-wLLtDs8Ay2J66WH0BD9pqXE2_HXfTEViwb8kGQFkC90P2FXE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"type": "text",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj"
+					},
+					{
+						"key": "ConsumerSecret",
+						"type": "text",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD"
+					},
+					{
+						"key": "AccessToken",
+						"type": "text",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"type": "text",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "productName",
+							"value": "Encu",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "productPrice",
+							"value": "99999",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "productStock",
+							"value": "10",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "productImage",
+							"type": "file",
+							"src": "/C:/Users/rezky/Pictures/Leah's Farm Coloring Book 4.png",
+							"disabled": true
+						},
+						{
+							"key": "_method",
+							"value": "DELETE",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/supplier/product?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"supplier",
+						"product"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "aHhy7AIAvzPBdQdpB0YbaRH6N9Zw0rbhWCjenCOLhMZKSjq9tvenCidF8Y05",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supplier search product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjBjNTdlNzdiMGU4Zjc4M2ZiMjYwYjI2MTJlODE5NzI0MmVhMjNkNTU0ODU4ZjJmNDU2NWMzMWFjOGRiYmQ0M2UwZjQyNWI1NjQ2ZWM3ZTc1In0.eyJhdWQiOiIxIiwianRpIjoiMGM1N2U3N2IwZThmNzgzZmIyNjBiMjYxMmU4MTk3MjQyZWEyM2Q1NTQ4NThmMmY0NTY1YzMxYWM4ZGJiZDQzZTBmNDI1YjU2NDZlYzdlNzUiLCJpYXQiOjE1NzI3MTI4OTMsIm5iZiI6MTU3MjcxMjg5MywiZXhwIjoxNTcyNzk5MjkzLCJzdWIiOiIxIiwic2NvcGVzIjpbInNlbGxlciJdfQ.I7nvAWY12nWfD7uCez2LHWwNg-QILKVXpAPhohgYPHZ7p-6toZG1V6iLdCpLEpdpeavvBYKQuY0VYlbYaFASUiHGtIw4p5vwidbYOZDexXwzPLfx4BtZEGxlq7Iat5IDueIj03SD1pZ9u_tGMPDoV6herjA0epntVpFJlB6Pv20W4TUMKiZdOrwSAjTjKZdgYvg7U7m9cd6pihkp67sDjXvMpBQ1jFyGe6-avpnS9gGmgkjSa9On3ECf8NRZbbJHybuCjqtA8MnQ0k2UcIsfCl9nJWwhdGP6JSC1ALsJILayK6RU7iNeegjheUR1J3ghOje0suZ-xYyix2A1pl3UVIQiozSeicJKJTAyqH_HYbKigroU2eroDRwGe6LOSL6n_BKPEmmrOIxPpZyrx31YHMhY_fvHxrgmqDKIvYsPx9gkZVWnt8ZhLT43OcdkVP8S9y32CRL7a2trNSM5MjI-CQOSR5tTOINHSGTxy_IgZ7IO9g4Q-4piCnx4r-NDWMAaD6F7nwF6VhLnNySogYpBSElrIy8vhF9JBHeZH6Y5NdgzYwFN-0evSTm8MmURoVNfLkp7A_tIFKdrUp3AGAg7d6R_m5JG6CAW39XVGOiqP0vxZeHf-t-9ejbRlSGreqjH4e8Dv3A0Hc6Fd7tMoinssKqy0QL3LJimMR2W_MisSmk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj",
+						"type": "text"
+					},
+					{
+						"key": "ConsumerSecret",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD",
+						"type": "text"
+					},
+					{
+						"key": "AccessToken",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep",
+						"type": "text"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fullname",
+							"value": "rezkysetiawan",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "DOB",
+							"value": "1999-01-01",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "rezky2211977",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "Test123#",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sex",
+							"value": "0",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "rezky.setiawan85@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "089629238997",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "jakarta",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/supplier/product?",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"supplier",
+						"product"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JWTTesting",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQxYmM3OGIwODM1M2VkNmY5MWU5YWRmZGNmYTQ2YTc1NDg4NDI0ZWI5NTc3NzY2MTUyOTBiNDU5NThlY2JmNzFmZGFmNjllZTAxOTZiOTFkIn0.eyJhdWQiOiIxIiwianRpIjoiZDFiYzc4YjA4MzUzZWQ2ZjkxZTlhZGZkY2ZhNDZhNzU0ODg0MjRlYjk1Nzc3NjYxNTI5MGI0NTk1OGVjYmY3MWZkYWY2OWVlMDE5NmI5MWQiLCJpYXQiOjE1NzIxODExNDQsIm5iZiI6MTU3MjE4MTE0NCwiZXhwIjoxNTcyMjY3NTQzLCJzdWIiOiIxIiwic2NvcGVzIjpbInNlbGxlciJdfQ.aEp4x9GKuG6946EHEDannHR-fg6v3nE7s2WBDSbG01vcAOFQjm45NDy3W7AYSxHyaEKANNJXYFukV01RR1FZqEiD6sH7Ql6BIy7_575-J_P_PxGiJm4CVhGaX4u9YIBeDcY72Bne3LaJSgoAty09zZoXYtg9aAjG6ix8M7T46KyAyywwFHrrPSKSa__lZX0p1uPdSVrA16sxCRdo2-8QrMajboncmzHp--uSEDnUdt0CryPlUxmHDdybwPDwhjs7Q4Hzx4G5XsPHebSX3yBnPDOEmIFMgtreLbOiuVrmMp9zd-cVjlW1Ad05w8E1xlFVtYH_XJ6BfHkKF9vJndY_bF4OdV9Dg8skxlI02Hnlm4IE9xqy9UX8aPJ38hLemPPrCsFGdWidaVJj2VrLqkzFxTEp3qYY1G-zi9RQ_XUzwwOF0m4s7ufepykw4g01FqpyKCXlgXgiAngCNTyiQcFA6StkdEo8LtB2cCqAv5Y2dk8h6a0bmcqmbk8994kuE-6CP7xL0mH3pySFgQrpDXSlqCQMWvEowlgXY5S-8vd4m8md5SxMGOXGSyb7R57CNEAzGSHFd7Yyyy3T4WcVixQfvM2Hhu4yj9Q-GK_prQlSEc2SCYu51oVtZW6TEXHSNpK1JkTzGLqX0vZzVPSDuWLqS6Uwnz9zBvk9LNbcwzAvsoQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj",
+						"type": "text"
+					},
+					{
+						"key": "ConsumerSecret",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD",
+						"type": "text"
+					},
+					{
+						"key": "AccessToken",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep",
+						"type": "text"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "productName",
+							"value": "Encu",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "productPrice",
+							"value": "99999",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "productStock",
+							"value": "10",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "productImage",
+							"value": null,
+							"type": "file",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "rezky221197",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test123#",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/apitest/getAccount",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"apitest",
+						"getAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SupplierCheck",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQxYmM3OGIwODM1M2VkNmY5MWU5YWRmZGNmYTQ2YTc1NDg4NDI0ZWI5NTc3NzY2MTUyOTBiNDU5NThlY2JmNzFmZGFmNjllZTAxOTZiOTFkIn0.eyJhdWQiOiIxIiwianRpIjoiZDFiYzc4YjA4MzUzZWQ2ZjkxZTlhZGZkY2ZhNDZhNzU0ODg0MjRlYjk1Nzc3NjYxNTI5MGI0NTk1OGVjYmY3MWZkYWY2OWVlMDE5NmI5MWQiLCJpYXQiOjE1NzIxODExNDQsIm5iZiI6MTU3MjE4MTE0NCwiZXhwIjoxNTcyMjY3NTQzLCJzdWIiOiIxIiwic2NvcGVzIjpbInNlbGxlciJdfQ.aEp4x9GKuG6946EHEDannHR-fg6v3nE7s2WBDSbG01vcAOFQjm45NDy3W7AYSxHyaEKANNJXYFukV01RR1FZqEiD6sH7Ql6BIy7_575-J_P_PxGiJm4CVhGaX4u9YIBeDcY72Bne3LaJSgoAty09zZoXYtg9aAjG6ix8M7T46KyAyywwFHrrPSKSa__lZX0p1uPdSVrA16sxCRdo2-8QrMajboncmzHp--uSEDnUdt0CryPlUxmHDdybwPDwhjs7Q4Hzx4G5XsPHebSX3yBnPDOEmIFMgtreLbOiuVrmMp9zd-cVjlW1Ad05w8E1xlFVtYH_XJ6BfHkKF9vJndY_bF4OdV9Dg8skxlI02Hnlm4IE9xqy9UX8aPJ38hLemPPrCsFGdWidaVJj2VrLqkzFxTEp3qYY1G-zi9RQ_XUzwwOF0m4s7ufepykw4g01FqpyKCXlgXgiAngCNTyiQcFA6StkdEo8LtB2cCqAv5Y2dk8h6a0bmcqmbk8994kuE-6CP7xL0mH3pySFgQrpDXSlqCQMWvEowlgXY5S-8vd4m8md5SxMGOXGSyb7R57CNEAzGSHFd7Yyyy3T4WcVixQfvM2Hhu4yj9Q-GK_prQlSEc2SCYu51oVtZW6TEXHSNpK1JkTzGLqX0vZzVPSDuWLqS6Uwnz9zBvk9LNbcwzAvsoQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "ConsumerKey",
+						"value": "5C1Zpu5VuwKknBJAJhxTI5kFj",
+						"type": "text"
+					},
+					{
+						"key": "ConsumerSecret",
+						"value": "F4VIjyl8YoxOoeuQXR1aWPJHqVesIFdgiC4lEVM1PoCxByOaFD",
+						"type": "text"
+					},
+					{
+						"key": "AccessToken",
+						"value": "9vRLtwBXgO30uTvIu9YBTCCAkvv8EUjmYd1P59Ep",
+						"type": "text"
+					},
+					{
+						"key": "AccessTokenSecret",
+						"value": "pNKbGTzjMSrxfpLEIFU9XoWwrT4bHyrq99qxp0kByv2Mo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "productName",
+							"value": "Encu",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "productPrice",
+							"value": "99999",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "productStock",
+							"value": "10",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "productImage",
+							"value": null,
+							"type": "file",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "rezky221197",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test123#",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/apitest/getAccount",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"apitest",
+						"getAccount"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
